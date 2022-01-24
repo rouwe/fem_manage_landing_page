@@ -30,10 +30,38 @@ navClose.addEventListener("click", () => {
     heroImg.style.visibility = 'visible';
 })
 /* Testimonial Slider
-    :element 
+    :element testimonials: .testimonial - all testimonials
+    :mobileSlideTracker
 */
 const testimonials = document.getElementsByClassName('testimonial');
 const mobileSlideTracker = document.getElementsByClassName('mobile-slide-tracker');
 const slidesDots = document.getElementsByClassName('slide-dot');
-console.log(testimonials.length)
-console.log(slidesDots.length)
+
+let slideNum = 0;
+console.log(testimonials)
+function startSlide() {
+    // Display the next testimonial 
+    setInterval(() => {
+        const isActive = testimonials[slideNum].classList.contains('testimonial-active');
+        if (slideNum == 3) {
+            // Hide Last
+            testimonials[3].classList.remove('testimonial-active');
+            slidesDots[3].classList.remove('slide-active');
+            slideNum = 0;
+            // Display First
+            testimonials[0].classList.add('testimonial-active');
+            slidesDots[slideNum].classList.add('slide-active');
+        }
+        else {
+            // Hide current testimonial
+            testimonials[slideNum].classList.remove('testimonial-active');
+            slidesDots[slideNum].classList.remove('slide-active');
+            slideNum += 1;
+        }
+        // Display next testimonial
+        testimonials[slideNum].classList.add('testimonial-active');
+        slidesDots[slideNum].classList.add('slide-active');
+    }, 3500);
+}
+startSlide();
+// setInterval(nextSlide, )

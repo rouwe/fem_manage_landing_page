@@ -269,6 +269,7 @@ section p {
     height: 7px;
     border-radius: 50%;
     margin: 0 0.15rem;
+    transition: 250ms ease-out; 
     border: 1px solid hsl(12, 88%, 59%);
 }
 .testimonial-cta {
