@@ -161,6 +161,7 @@ section p {
 .features-section {
     text-align: center;
     padding: 2.3rem 15px;
+    margin-bottom: 0;
 }
 .features-texts {
     margin-bottom: 2.3rem;
@@ -219,4 +220,64 @@ section p {
     letter-spacing: -0.2px;
     line-height: 1.7rem;
     color: hsla(228, 39%, 23%, 0.45);
+}
+/* Testimonials Section */
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+.testimonials-texts h2 {
+    font-size: 1.85rem;
+    text-align: center;
+    margin-top: 0;
+}
+.testimonial {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0 3rem;
+}
+.testimonial img {
+    width: 23%;
+}
+.testimonial-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem;
+}
+.testimonial p {
+    font-size: 0.95rem;
+    text-align: center;
+    letter-spacing: -0.5px;
+    line-height: 1.6rem;
+    padding: 0 0.8rem;
+    margin-top: 0;
+}
+.mobile-slide-tracker {
+    display: flex;
+    margin: 1.25rem 0 2rem;
+}
+.slide-dot {
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 0.15rem;
+    border: 1px solid hsl(12, 88%, 59%);
+}
+.testimonial-cta {
+    padding: 0.8rem 1.9rem;
+    border-radius: 30px;
+}
+.testimonial-active {
+    display: flex;
+}
+.slide-active {
+    background-color: hsl(12, 88%, 59%);
 }

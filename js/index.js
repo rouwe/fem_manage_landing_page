@@ -29,3 +29,11 @@ navClose.addEventListener("click", () => {
     bgOverlay.style.display = 'none';
     heroImg.style.visibility = 'visible';
 })
+/* Testimonial Slider
+    :element 
+*/
+const testimonials = document.getElementsByClassName('testimonial');
+const mobileSlideTracker = document.getElementsByClassName('mobile-slide-tracker');
+const slidesDots = document.getElementsByClassName('slide-dot');
+console.log(testimonials.length)
+console.log(slidesDots.length)
