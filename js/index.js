@@ -11,7 +11,8 @@ const navOpen = document.getElementsByClassName('header-nav-open')[0];
 const navClose = document.getElementsByClassName('header-nav-close')[0];
 const bgOverlay = document.getElementsByClassName('menu-bg-overlay')[0];
 const heroImg = document.getElementsByClassName('hero-img')[0];
-navOpen.addEventListener("click", () => {
+navOpen.addEventListener("click", openMenu)
+function openMenu() {
     // Opens menu
     headerNavBox.style.visibility = 'visible';
     headerNav.style.transform = 'translateX(0rem)';
@@ -19,8 +20,9 @@ navOpen.addEventListener("click", () => {
     navClose.style.display = 'block';
     bgOverlay.style.display = 'block';
     heroImg.style.visibility = 'hidden';
-})
-navClose.addEventListener("click", () => {
+}
+navClose.addEventListener("click", closeMenu)
+function closeMenu() {
     // Closes menu
     headerNavBox.style.visibility = 'hidden';
     headerNav.style.transform = 'translateX(1000rem)';
@@ -28,7 +30,9 @@ navClose.addEventListener("click", () => {
     navClose.style.display = 'none';
     bgOverlay.style.display = 'none';
     heroImg.style.visibility = 'visible';
-})
+}
+// Close menu when clicking in overlay
+bgOverlay.addEventListener("click", closeMenu)
 /* Testimonial Slider
     :element testimonials: .testimonial - all testimonials
     :mobileSlideTracker
@@ -38,7 +42,6 @@ const mobileSlideTracker = document.getElementsByClassName('mobile-slide-tracker
 const slidesDots = document.getElementsByClassName('slide-dot');
 
 let slideNum = 0;
-console.log(testimonials)
 function startSlide() {
     // Display the next testimonial 
     setInterval(() => {
