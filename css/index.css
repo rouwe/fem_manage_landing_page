@@ -75,6 +75,9 @@ section p {
 .header-nav-close {
     transform: translate(-2px, -2px);
 }
+.header-nav-close, .header-nav-open {
+    cursor: pointer;
+}
 .header-nav {
     margin: 0 24px;
     padding: 16px 32px;
@@ -328,5 +331,88 @@ section p {
 footer {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    padding: 1.6rem 1.5rem 0;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(233, 12%, 13%);
+}
+.footer-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: fit-content;
+}
+.footer-email {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0;
+}
+.footer-email input, .footer-email button {
+    font-size: 0.79rem;
+    letter-spacing: -0.3px;
+    padding: 0.85rem 1.6rem;
+    border-radius: 20px;
+    border: none;
+}
+.footer-email input {
+    width: 73%;
+}
+.footer-email button {
+    width: 24%;
+    font-size: 0.7rem;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(12, 88%, 59%);
+}
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.9rem;
+    margin: 1.5rem 0;
+    padding-left: 2.4rem;
+}
+.footer-nav li {
+    margin: 0.5rem 0;
+}
+.footer-nav a {
+    font-size: 0.87rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.85);
+}
+.footer-social-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    margin: 1.5rem 0;
+}
+.footer-social {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.footer-social svg {
+    transform: scale(1.55);
+}
+.footer-logo {
+    margin: 1.5rem auto;
+    transform: scale(1.1);
+}
+.copy {
+    font-size: 0.75rem;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.55);
+}
+/* Attribution */
+.attribution { 
+    width: 100%;
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem 0;
+}
+.attribution a {
+    text-align: center;
+    color: hsl(12, 88%, 59%);
 }
