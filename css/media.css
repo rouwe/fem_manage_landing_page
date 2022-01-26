@@ -1,6 +1,10 @@
 @media screen and (min-width: 1440px) {
+    main {
+        background-size: 56.5%;
+        background-position: 113%  -90px;
+    }
     .hero-section, .features-section, .simplify-section {
-        padding: 73px 183px;
+        padding: 73px 163px;
     }
     /* Header */
     .header-section {
@@ -46,6 +50,29 @@
     /* Hero */
     .hero-section {
         flex-direction: row;
+        justify-content: space-between;
     }
-
+    .hero-texts {
+        width: 40%;
+        align-items: flex-start;
+    }
+    .hero-texts h1, .hero-texts p {
+        text-align: left;
+    }
+    .hero-texts h1 {
+        font-size: 3.3rem;
+        line-height: 4rem;
+        padding-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .hero-texts p {
+        width: 75%;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .hero-img {
+        width: 50%;
+        margin-top: 5rem;
+        transform: scale(1.05) translate(10px, -10px);
+    }
 }
