@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Manage landing page</title>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/media.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -23,7 +24,7 @@
         </a>
       </div>
       <!-- Navigation -->
-      <nav class="header-nav-container">
+      <nav class="header-nav-container" aria-label="primary">
         <svg class="header-nav-open" xmlns="http://www.w3.org/2000/svg" width="25" height="25" aria-label="menu"><g fill="#242D52" fill-rule="evenodd"><path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z"/></g></svg>
         <svg class="header-nav-close" xmlns="http://www.w3.org/2000/svg" width="21" height="25" aria-label="close menu"><path fill="#242D52" fill-rule="evenodd" d="M17.925.747l2.828 2.828L13.328 11l7.425 7.425-2.828 2.828-7.425-7.425-7.425 7.425-2.828-2.828L7.671 11 .247 3.575 3.075.747 10.5 8.171 17.925.747z"/></svg>
         <div class="header-nav-box">
@@ -134,8 +135,8 @@
         <input type="email" name="email" value="" aria-label="Email" placeholder="Updates in your inbox...">
         <button type="submit"  name="submit-email">Go</button>
       </form>
-      <nav>
-        <ul class="footer-nav" role="navigation">
+      <nav aria-label="footer-navigation">
+        <ul class="footer-nav">
           <li><a href="#" target="_blank">Home</a></li>
           <li><a href="#" target="_blank">Careers</a></li>
           <li><a href="#" target="_blank">Pricing</a></li>

@@ -160,7 +160,7 @@ section p {
     background-size: 85%;
     z-index: -1;
 }
-/* Features Section */
+/* Features */
 .features-section {
     text-align: center;
     padding: 2.3rem 15px;
@@ -224,7 +224,7 @@ section p {
     line-height: 1.7rem;
     color: hsla(228, 39%, 23%, 0.45);
 }
-/* Testimonials Section */
+/* Testimonials */
 .testimonials-section {
     display: flex;
     flex-direction: column;
@@ -286,7 +286,7 @@ section p {
 .slide-active {
     background-color: hsl(12, 88%, 59%);
 }
-/* Simplify Section */
+/* Simplify */
 .simplify-section {
     position: relative;
     display: flex;
