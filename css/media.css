@@ -1,7 +1,7 @@
 @media screen and (min-width: 1440px) {
     main {
         background-size: 56.5%;
-        background-position: 113%  -90px;
+        background-position: 123%  -150px;
     }
     .hero-section, .features-section, .simplify-section {
         padding: 73px 163px;
@@ -70,9 +70,64 @@
         font-size: 1rem;
         margin-bottom: 2rem;
     }
+    .hero-cta::after {
+        display: none;
+    }
     .hero-img {
         width: 50%;
         margin-top: 5rem;
         transform: scale(1.05) translate(10px, -10px);
+    }
+    /* Features */
+    .features-section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+    .features-section p {
+        letter-spacing: 0.3px;
+        text-shadow:-1px 0px hsla(228, 39%, 23%, 0.15);
+        margin-top: 1.3rem;
+    }
+    .features-texts {
+        width: 40%;
+        text-align: left;
+        margin-right: 3rem;
+    }
+    .features-texts h2, .features-texts p {
+        padding: 0;
+    }
+    .features-texts h2 {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        margin-top: 1rem;
+    }
+    .features-texts p {
+        width: 75%; 
+    }
+    .features-container {
+        width: 49%;
+        margin-top: 0.5rem;
+    }
+    .feature-box {
+        margin: 0.5rem 0 1rem;
+    }
+    .feature-box > div {
+        width: 100%;
+        background-color: transparent;
+    }
+    .feature-box span {
+        padding: 0.55rem 1.5rem;
+    }
+    .feature-box h3 {
+        padding-left: 1rem;
+        letter-spacing: -1px;
+    }
+    .feature-box p {
+        font-size: 0.95rem;
+        word-spacing: 0.5px;
+        line-height: 1.6rem;
+        padding-left: 6rem;
+        margin-top: 0.8rem;
     }
 }
