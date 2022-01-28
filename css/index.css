@@ -340,7 +340,6 @@ footer {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: fit-content;
 }
 .footer-email {
     width: 100%;
