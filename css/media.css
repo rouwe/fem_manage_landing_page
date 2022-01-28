@@ -1,10 +1,13 @@
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
     main {
         background-size: 56.5%;
         background-position: 123%  -150px;
     }
     .hero-section, .features-section, .simplify-section {
         padding: 73px 163px;
+    }
+    .btn:hover {
+        background-color: hsla(12, 88%, 59%, 0.65);
     }
     /* Header */
     .header-section {
@@ -39,6 +42,10 @@
         letter-spacing: 0.2px;
         text-shadow: -1px 0px hsla(228, 39%, 23%, 0.604);
         color: hsla(228, 39%, 23%);
+    }
+    .header-nav a:hover {
+        color: hsla(228, 39%, 23%, 0.45);
+        text-shadow: -1px 0px hsla(228, 39%, 23%, 0.204);
     }
     .header-cta {
         display: inline-block;
@@ -223,6 +230,11 @@
         font-weight: bold;
         padding: 0.9rem 2rem;
         margin: 0;
+        z-index: 1;
+    }
+    .simplify-cta:hover {
+        color:hsla(12, 88%, 59%, 0.45);
+        background-color: hsla(0, 0%, 100%);
     }
     /* Footer */
     .footer-content {
@@ -241,9 +253,22 @@
         margin-right: 10px;
     }
     .footer-email button {
+        cursor: pointer;
         transform: scaleX(0.9);
         text-transform: capitalize;
         border-radius: 30px;
+    }
+    .footer-email-err {
+        position: absolute;
+        width: 100%;
+        height: min-content;
+        bottom: 0;
+        display: none;
+        transform: translateY(1.3rem);
+        font-size: 0.7rem;
+        font-style: italic;
+        padding-left: 1.6rem;
+        color: hsla(12, 88%, 59%, 0.65);
     }
     .footer-content nav {
         grid-area: nav;
@@ -254,6 +279,9 @@
     }
     .footer-nav a {
         color: hsla(0, 0%, 100%, 0.7)
+    }
+    .footer-nav a:hover {
+        color: hsla(12, 88%, 59%, 0.65);
     }
     .footer-nav, .footer-social {
         padding-left: 0.8rem;
@@ -277,6 +305,9 @@
     .footer-social svg {
         transform: scale(1);
         margin-right: 13px;
+    }
+    .footer-social svg path:hover {
+        fill: hsla(12, 88%, 59%);       
     }
     .copy {
         grid-area: other;

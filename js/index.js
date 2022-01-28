@@ -126,3 +126,19 @@
         }, 2500);
     })()
 })()
+// Form Validation
+const email = document.getElementById('email');
+const form = document.getElementById('form');
+form.addEventListener("submit", (e) => {
+    const errElement = document.getElementsByClassName('footer-email-err')[0];
+    let error = false;
+    if (email.value === '' || email.value === null) {
+        error = true;
+    }
+    if (error) {
+        e.preventDefault()
+        errElement.style.display = 'block';
+    } else {
+        errElement.style.display = 'none';
+    }
+}) 

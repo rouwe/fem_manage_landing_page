@@ -342,6 +342,7 @@ footer {
     grid-template-columns: 1fr;
 }
 .footer-email {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;

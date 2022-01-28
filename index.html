@@ -133,9 +133,10 @@
   <footer>
     <div class="footer-content">
       <!-- Email -->
-      <form class="footer-email" method="POST">
-        <input type="email" name="email" value="" aria-label="Email" placeholder="Updates in your inbox...">
-        <button type="submit"  name="submit-email">Go</button>
+      <form id="form" class="footer-email" action="/" method="POST">
+        <input type="email" id="email" name="email" value="" aria-label="Email" placeholder="Updates in your inbox...">
+        <button id="submitEmail" type="submit"  name="submit-email">Go</button>
+        <span class="footer-email-err">Please insert a valid email</span>
       </form>
       <nav aria-label="footer-navigation">
         <ul class="footer-nav">
