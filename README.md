@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Go to frontendmentor.io](https://www.frontendmentor.io/solutions/responsive-landing-page-using-css-grid-OwcriuDAO)
-- Live Site URL: [View live site](https://rouwe.github.io/manage_landing_page/)
+- Live Site URL: [View live site](https://rouwe.github.io/fem_manage_landing_page/)
 
 ## My process
 
